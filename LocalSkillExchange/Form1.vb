@@ -3,8 +3,31 @@ Imports System.Data.SQLite
 Imports Microsoft.Web.WebView2.Core
 Imports Newtonsoft.Json
 Imports Newtonsoft.Json.Linq
+Imports System.Runtime.InteropServices
 
 Public Class Form1
+
+    <DllImport("credui.dll", CharSet:=CharSet.Unicode, SetLastError:=True)>
+    Private Shared Function CredUIPromptForWindowsCredentials(
+        ByRef pUiInfo As CREDUI_INFO,
+        authError As Integer,
+        ByRef authPackage As UInteger,
+        InAuthBuffer As IntPtr,
+        InAuthBufferSize As UInteger,
+        ByRef refOutAuthBuffer As IntPtr,
+        ByRef refOutAuthBufferSize As UInteger,
+        ByRef fSave As Boolean,
+        flags As Integer) As Integer
+    End Function
+
+    <StructLayout(LayoutKind.Sequential, CharSet:=CharSet.Unicode)>
+    Private Structure CREDUI_INFO
+        Public cbSize As Integer
+        Public hwndParent As IntPtr
+        Public pszMessageText As String
+        Public pszCaptionText As String
+        Public hbmBanner As IntPtr
+    End Structure
 
     Private Async Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -23,7 +46,7 @@ Public Class Form1
     End Sub
 
 
-    Private Sub WebMessageReceived(sender As Object,
+    Private Async Sub WebMessageReceived(sender As Object,
                                    e As CoreWebView2WebMessageReceivedEventArgs)
 
         Dim json As String = e.WebMessageAsJson
@@ -185,6 +208,42 @@ Public Class Form1
             ' ================= LOGIN =================
             Case "loginUser"
                 Try
+                    ' Check if this is an explicit login rather than a background refresh
+                    Dim isBackgroundRefresh = False
+                    If request("refresh") IsNot Nothing Then
+                        isBackgroundRefresh = request("refresh").ToObject(Of Boolean)()
+                    End If
+
+                    If Not isBackgroundRefresh Then
+                        Dim credUiInfo As New CREDUI_INFO()
+                        credUiInfo.cbSize = Marshal.SizeOf(credUiInfo)
+                        credUiInfo.pszCaptionText = "Authentication Required"
+                        credUiInfo.pszMessageText = "Please authenticate using Windows Hello or your Windows PIN/Password."
+                        credUiInfo.hwndParent = Me.Handle ' Set parent window to block UI
+                        
+                        Dim authPackage As UInteger = 0
+                        Dim outAuthBuffer As IntPtr = IntPtr.Zero
+                        Dim outAuthBufferSize As UInteger = 0
+                        Dim save As Boolean = False
+                        
+                        Dim result As Integer = CredUIPromptForWindowsCredentials(
+                            credUiInfo, 0, authPackage, IntPtr.Zero, 0, 
+                            outAuthBuffer, outAuthBufferSize, save, 1) ' 1 = CREDUIWIN_GENERIC
+                            
+                        If outAuthBuffer <> IntPtr.Zero Then
+                            Marshal.FreeCoTaskMem(outAuthBuffer)
+                        End If
+                        
+                        If result <> 0 Then
+                            Dim errResp = JsonConvert.SerializeObject(New With {
+                                .type = "error",
+                                .message = "Authentication failed or was cancelled."
+                            })
+                            WebView21.CoreWebView2.PostWebMessageAsJson(errResp)
+                            Exit Sub
+                        End If
+                    End If
+
                     Dim userId As Integer = Convert.ToInt32(request("userId"))
                     Using conn As New SQLiteConnection(connectionString)
                         conn.Open()

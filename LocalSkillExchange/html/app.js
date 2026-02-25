@@ -274,7 +274,7 @@ if (window.chrome && window.chrome.webview) {
             // If they completed a gig, fetch new credits
             if (data.message.includes("completed") || data.message.includes("posted")) {
                 if (currentUser && window.chrome && window.chrome.webview) {
-                    window.chrome.webview.postMessage({ action: "loginUser", userId: currentUser.UserID });
+                    window.chrome.webview.postMessage({ action: "loginUser", userId: currentUser.UserID, refresh: true });
                 }
             }
         }
@@ -294,7 +294,7 @@ if (window.chrome && window.chrome.webview) {
             showToast(data.message, "success");
             loadProfiles(); // Refresh the list to see updated credits
             if (currentUser && window.chrome && window.chrome.webview) {
-                window.chrome.webview.postMessage({ action: "loginUser", userId: currentUser.UserID });
+                window.chrome.webview.postMessage({ action: "loginUser", userId: currentUser.UserID, refresh: true });
             }
         }
 
