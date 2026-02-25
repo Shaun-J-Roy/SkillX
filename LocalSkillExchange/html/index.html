@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LocalSkill Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>SkillX</h2>
+        <button onclick="showSection('register')">Register</button>
+        <button onclick="showSection('skill')">Add Skill</button>
+        <button onclick="showSection('gig')">Post Gig</button>
+        <button onclick="showSection('market'); loadGigs();">Marketplace</button>
+        <button onclick="showSection('dashboard'); loadChart();">Dashboard</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- REGISTER -->
+        <div id="register" class="section">
+            <div class="card">
+                <h3>Register User</h3>
+                <input id="name" placeholder="Full Name">
+                <input id="area" placeholder="Area / Location">
+                <button class="primary" onclick="registerUser()">Create User</button>
+            </div>
+        </div>
+
+        <!-- ADD SKILL -->
+        <div id="skill" class="section">
+            <div class="card">
+                <h3>Add Skill</h3>
+                <select id="skillUser"></select>
+                <input id="skillTitle" placeholder="Skill Title">
+                <input id="skillCategory" placeholder="Category">
+                <input id="skillCredits" type="number" placeholder="Credits Required">
+                <button class="primary" onclick="addSkill()">Add Skill</button>
+            </div>
+        </div>
+
+        <!-- POST GIG -->
+        <div id="gig" class="section">
+            <div class="card">
+                <h3>Post Gig</h3>
+                <select id="gigUser"></select>
+                <input id="gigCategory" placeholder="Category">
+                <input id="gigDescription" placeholder="Short Description">
+                <input id="gigCredits" type="number" placeholder="Credits Offered">
+                <button class="primary" onclick="postGig()">Post Gig</button>
+            </div>
+        </div>
+
+        <!-- MARKETPLACE -->
+        <div id="market" class="section">
+            <div class="card">
+                <h3>Marketplace</h3>
+                <ul id="gigList" class="list"></ul>
+            </div>
+        </div>
+
+        <!-- DASHBOARD -->
+        <div id="dashboard" class="section">
+            <div class="card">
+                <h3>Credit Distribution</h3>
+                <canvas id="creditChart"></canvas>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
