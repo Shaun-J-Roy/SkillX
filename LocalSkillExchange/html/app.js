@@ -4,12 +4,23 @@ function showSection(id) {
 }
 
 function registerUser() {
+
+    const nameValue = document.getElementById("name").value;
+    const areaValue = document.getElementById("area").value;
+
+    if (!nameValue || !areaValue) {
+        alert("Please fill all fields.");
+        return;
+    }
+
     window.chrome.webview.postMessage({
         action: "registerUser",
-        name: name.value,
-        area: area.value
+        name: nameValue,
+        area: areaValue
     });
+
     alert("User Registered!");
+
     loadUsers();
 }
 
