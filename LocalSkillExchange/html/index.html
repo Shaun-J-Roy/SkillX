@@ -1,83 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>LocalSkill Exchange</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillX - Campus Gig Exchange</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 
-<div class="app">
+    <!-- Login & Register Overlay -->
+    <div id="authOverlay" class="auth-overlay">
+        <div class="auth-container">
+            <h1 class="logo-large">SkillX</h1>
+            <p class="auth-subtitle">Campus Gig Exchange</p>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <h2>SkillX</h2>
-        <button onclick="showSection('register')">Register</button>
-        <button onclick="showSection('skill')">Add Skill</button>
-        <button onclick="showSection('gig')">Post Gig</button>
-        <button onclick="showSection('market'); loadGigs();">Marketplace</button>
-        <button onclick="showSection('dashboard'); loadChart();">Dashboard</button>
+            <div class="auth-tabs">
+                <button class="tab-btn active" onclick="switchAuthTab('login')">Login</button>
+                <button class="tab-btn" onclick="switchAuthTab('register')">Register</button>
+            </div>
+
+            <div id="loginSection" class="auth-section active">
+                <div class="input-group">
+                    <label>User ID</label>
+                    <input id="loginId" type="number" min="1" placeholder="Enter your User ID">
+                </div>
+                <button class="btn primary full-width" onclick="loginUser()">Login</button>
+            </div>
+
+            <div id="registerSection" class="auth-section">
+                <div class="input-group">
+                    <label>User ID</label>
+                    <input id="regId" type="number" min="1" placeholder="Choose a unique ID">
+                </div>
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input id="regName" type="text" placeholder="John Doe">
+                </div>
+                <div class="input-group">
+                    <label>Campus Area / Dorm</label>
+                    <input id="regArea" type="text" placeholder="North Campus">
+                </div>
+                <button class="btn primary full-width" onclick="registerUser()">Create Account</button>
+            </div>
+        </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="main">
+    <div id="mainApp" class="app" style="display: none;">
 
-        <!-- REGISTER -->
-        <div id="register" class="section">
-            <div class="card">
-                <h3>Register User</h3>
-                <input id="name" placeholder="Full Name">
-                <input id="area" placeholder="Area / Location">
-                <button class="primary" onclick="registerUser()">Create User</button>
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>SkillX</h2>
             </div>
-        </div>
-
-        <!-- ADD SKILL -->
-        <div id="skill" class="section">
-            <div class="card">
-                <h3>Add Skill</h3>
-                <select id="skillUser"></select>
-                <input id="skillTitle" placeholder="Skill Title">
-                <input id="skillCategory" placeholder="Category">
-                <input id="skillCredits" type="number" placeholder="Credits Required">
-                <button class="primary" onclick="addSkill()">Add Skill</button>
+            <div class="sidebar-menu">
+                <button class="menu-btn active" onclick="showSection('market', this); loadGigs();">
+                    Marketplace
+                </button>
+                <button class="menu-btn" onclick="showSection('skill', this)">
+                    Add Skill
+                </button>
+                <button class="menu-btn" onclick="showSection('gig', this)">
+                    Post Gig
+                </button>
+                <button class="menu-btn" onclick="showSection('profiles', this); loadProfiles();">
+                    Profiles
+                </button>
+                <button class="menu-btn" onclick="showSection('dashboard', this); loadChart();">
+                    Dashboard
+                </button>
             </div>
-        </div>
 
-        <!-- POST GIG -->
-        <div id="gig" class="section">
-            <div class="card">
-                <h3>Post Gig</h3>
-                <select id="gigUser"></select>
-                <input id="gigCategory" placeholder="Category">
-                <input id="gigDescription" placeholder="Short Description">
-                <input id="gigCredits" type="number" placeholder="Credits Offered">
-                <button class="primary" onclick="postGig()">Post Gig</button>
+            <div class="user-widget">
+                <div class="user-avatar" id="navAvatar">U</div>
+                <div class="user-info">
+                    <div class="user-name" id="navUserName">User Name</div>
+                    <div class="user-credits" id="navUserCredits"> 0 Credits</div>
+                </div>
+                <button class="logout-btn" onclick="logout()" title="Logout"></button>
             </div>
-        </div>
+        </nav>
 
-        <!-- MARKETPLACE -->
-        <div id="market" class="section">
-            <div class="card">
-                <h3>Marketplace</h3>
-                <ul id="gigList" class="list"></ul>
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- ADD SKILL -->
+            <div id="skill" class="section section-fade-in">
+                <div class="header-area">
+                    <h1>Add a New Skill</h1>
+                    <p>Offer your talents to the campus community.</p>
+                </div>
+                <div class="card form-card">
+                    <div class="input-group">
+                        <label>Skill Title</label>
+                        <input id="skillTitle" placeholder="e.g. Logo Design, Python Tutoring">
+                    </div>
+                    <div class="input-group">
+                        <label>Category</label>
+                        <input id="skillCategory" placeholder="e.g. Design, Programming, Academic">
+                    </div>
+                    <div class="input-group">
+                        <label>Description</label>
+                        <textarea id="skillDesc" placeholder="Describe what you offer in detail..." rows="3"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Credits Required to Hire You</label>
+                        <input id="skillCredits" type="number" min="1" placeholder="e.g. 50">
+                    </div>
+                    <button class="btn primary" onclick="addSkill()">Publish Skill</button>
+                </div>
             </div>
-        </div>
 
-        <!-- DASHBOARD -->
-        <div id="dashboard" class="section">
-            <div class="card">
-                <h3>Credit Distribution</h3>
-                <canvas id="creditChart"></canvas>
+            <!-- POST GIG -->
+            <div id="gig" class="section section-fade-in">
+                <div class="header-area">
+                    <h1>Post a Gig</h1>
+                    <p>Need something done? Hire a student to help.</p>
+                </div>
+                <div class="card form-card">
+                    <div class="input-group">
+                        <label>Category</label>
+                        <input id="gigCategory" placeholder="e.g. Delivery, Tutoring, Event Helper">
+                    </div>
+                    <div class="input-group">
+                        <label>Short Description</label>
+                        <textarea id="gigDescription" placeholder="What do you need help with?" rows="3"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>Credits Offered</label>
+                        <input id="gigCredits" type="number" min="1" placeholder="e.g. 100">
+                    </div>
+                    <button class="btn primary" onclick="postGig()">Publish Gig</button>
+                </div>
             </div>
-        </div>
 
+            <!-- MARKETPLACE -->
+            <div id="market" class="section section-fade-in active-section">
+                <div class="header-area">
+                    <h1>Marketplace</h1>
+                    <p>Available gigs on campus waiting to be completed.</p>
+                </div>
+                <div id="gigList" class="grid-container empty-state-container">
+                    <!-- Gigs populate here -->
+                </div>
+            </div>
+
+            <!-- DASHBOARD -->
+            <div id="dashboard" class="section section-fade-in">
+                <div class="header-area">
+                    <h1>Campus Economy</h1>
+                    <p>Overview of credit distribution across top users.</p>
+                </div>
+                <div class="card chart-card">
+                    <canvas id="creditChart"></canvas>
+                </div>
+            </div>
+
+            <!-- PROFILES -->
+            <div id="profiles" class="section section-fade-in">
+                <div class="header-area">
+                    <h1>Student Directory</h1>
+                    <p>Browse profiles and hire students for their skills.</p>
+                </div>
+                <div class="split-view">
+                    <!-- USER LIST -->
+                    <div class="list-pane">
+                        <div class="search-bar">
+                            <input type="text" id="profileSearch" placeholder="Search students..."
+                                onkeyup="filterProfiles()">
+                        </div>
+                        <ul id="profileList" class="interactive-list"></ul>
+                    </div>
+
+                    <!-- PROFILE DETAILS -->
+                    <div class="detail-pane">
+                        <div id="profileEmptyState" class="empty-state">
+                            <span class="icon-large"></span>
+                            <p>Select a student to view their profile and skills</p>
+                        </div>
+                        <div id="profileDetails" class="card profile-card" style="display:none;">
+                            <div class="profile-header">
+                                <div class="profile-avatar large" id="detailAvatar">A</div>
+                                <div class="profile-info-main">
+                                    <h2 id="profileName">Name</h2>
+                                    <p class="sub-text" id="profileArea"> Area</p>
+                                    <span class="badge" id="profileCredits"> 0 Credits</span>
+                                </div>
+                            </div>
+                            <div class="profile-body">
+                                <h3>Skills Offered</h3>
+                                <div id="profileSkills" class="skills-grid empty-state-container">
+                                    <!-- Skills populate here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 
-</div>
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
 
-<script src="app.js"></script>
+    <script src="app.js?v=2"></script>
 
 </body>
+
 </html>

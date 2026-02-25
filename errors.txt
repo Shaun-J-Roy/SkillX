@@ -1,0 +1,1358 @@
+Build started 25-02-2026 09:58:58.
+Logging verbosity is set to: Detailed.     0>Process = "C:\Program Files\dotnet\dotnet.exe"
+       MSBuild executable path = "C:\Program Files\dotnet\sdk\10.0.102\MSBuild.dll"
+       Command line arguments = "C:\Program Files\dotnet\sdk\10.0.102\MSBuild.dll -maxcpucount --verbosity:m -tlp:default=auto --property:NuGetInteractive=true --restoreProperty:NuGetInteractive=true --restoreProperty:EnableDefaultCompileItems=false --restoreProperty:EnableDefaultEmbeddedResourceItems=false --restoreProperty:EnableDefaultNoneItems=false d:\LocalSkillExchange\LocalSkillExchange.sln /flp1:logfile=errors.txt -consoleloggerparameters:Summary -restore -distributedlogger:Microsoft.DotNet.Cli.Commands.MSBuild.MSBuildLogger,C:\Program Files\dotnet\sdk\10.0.102\dotnet.dll*Microsoft.DotNet.Cli.Commands.MSBuild.MSBuildForwardingLogger,C:\Program Files\dotnet\sdk\10.0.102\dotnet.dll -nologo"
+       Current directory = "D:\LocalSkillExchange"
+       MSBuild version = "18.0.7+445250245"
+       Based on the Windows registry key LongPathsEnabled, the LongPaths feature is enabled.
+       Based on the Windows registry key VerifiedAndReputablePolicyState, SAC state = 0: turned off.
+       d:\LocalSkillExchange\LocalSkillExchange.sln.metaproj : message : Property 'MSBuildExtensionsPath' with value 'C:\Program Files\dotnet\sdk\10.0.102\' expanded from the environment.
+       Assembly loaded during Evaluation: System.Threading.Tasks.Parallel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.2\System.Threading.Tasks.Parallel.dll, MVID: c827d93a-622c-403f-b635-e7389c8accaa, AssemblyLoadContext: Default)
+       The "NuGetInteractive" property is a global property, and cannot be modified.
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message : Property reassignment: $(_GenerateRestoreGraphProjectEntryInputProperties)="
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       ExcludeRestorePackageImports=true;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       _RestoreSolutionFileUsed=true;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionDir=d:\LocalSkillExchange\;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionName=LocalSkillExchange;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionFileName=LocalSkillExchange.sln;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionPath=d:\LocalSkillExchange\LocalSkillExchange.sln;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionExt=.sln;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :     " (previous value: "ExcludeRestorePackageImports=true") at C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets (123,5)
+       Assembly loaded during Evaluation: System.Numerics.Vectors, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.2\System.Numerics.Vectors.dll, MVID: ad5a0660-e3fa-4620-95a4-277a989519de, AssemblyLoadContext: Default)
+       Overriding target "Restore" in project "d:\LocalSkillExchange\LocalSkillExchange.sln.metaproj" with target "Restore" from project "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets".
+       The target "_MTPBuild" listed in a BeforeTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\Current\SolutionFile\ImportAfter\Microsoft.NET.Sdk.Solution.targets (24,11)" does not exist in the project, and will be ignored.
+       The target "Store" listed in a BeforeTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\Current\SolutionFile\ImportAfter\Microsoft.NET.Sdk.Solution.targets (33,11)" does not exist in the project, and will be ignored.
+       The target "VSTest" listed in a BeforeTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\Current\SolutionFile\ImportAfter\Microsoft.NET.Sdk.Solution.targets (33,11)" does not exist in the project, and will be ignored.
+       The target "_MTPBuild" listed in a BeforeTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\Current\SolutionFile\ImportAfter\Microsoft.NET.Sdk.Solution.targets (33,11)" does not exist in the project, and will be ignored.
+       The target "_CheckForInvalidConfigurationAndPlatform" listed in a BeforeTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets (703,11)" does not exist in the project, and will be ignored.
+     1>Project "d:\LocalSkillExchange\LocalSkillExchange.sln" on node 1 (Restore target(s)).
+     1>Target "ValidateSolutionConfiguration" in file "d:\LocalSkillExchange\LocalSkillExchange.sln.metaproj" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (entry point):
+     1>Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Message"
+         Building solution configuration "Debug|Any CPU".
+       Done executing task "Message".
+     1>Done building target "ValidateSolutionConfiguration" in project "LocalSkillExchange.sln".
+     1>Target "ValidateToolsVersions" in file "d:\LocalSkillExchange\LocalSkillExchange.sln.metaproj" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (entry point):
+     1>Done building target "ValidateToolsVersions" in project "LocalSkillExchange.sln".
+     1>Target "ValidateProjects" in file "d:\LocalSkillExchange\LocalSkillExchange.sln.metaproj" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (entry point):
+     1>Done building target "ValidateProjects" in project "LocalSkillExchange.sln".
+     1>Target "_LoadRestoreGraphEntryPoints" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (target "_FilterRestoreGraphProjectInputItems" depends on it):
+       Assembly loaded during TaskRun: NuGet.Build.Tasks, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll, MVID: 08f938bc-c41a-460c-a57a-b3e65fa8480c, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: System.Reflection.Metadata, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.2\System.Reflection.Metadata.dll, MVID: 68d9d628-f4a5-4465-b005-eacae216eec5, AssemblyLoadContext: Default)
+       Assembly loaded during TaskRun: NuGet.Common, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.Common.dll, MVID: 0ebddcbc-c0d1-4562-9772-1cc3c243691f, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.Commands, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.Commands.dll, MVID: a511dd5c-2599-4ad1-850c-954b0626c28d, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.ProjectModel, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.ProjectModel.dll, MVID: 7799350a-7e8f-4d79-9022-a95ee623280c, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+       Using "GetRestoreSolutionProjectsTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "GetRestoreSolutionProjectsTask"
+       Done executing task "GetRestoreSolutionProjectsTask".
+     1>Done building target "_LoadRestoreGraphEntryPoints" in project "LocalSkillExchange.sln".
+     1>Target "_FilterRestoreGraphProjectInputItems" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (target "_GenerateRestoreGraph" depends on it):
+       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+           _RestoreSolutionFileUsed=true
+           SolutionDir=d:\LocalSkillExchange\
+           SolutionName=LocalSkillExchange
+           SolutionFileName=LocalSkillExchange.sln
+           SolutionPath=d:\LocalSkillExchange\LocalSkillExchange.sln
+           SolutionExt=.sln
+         Additional Properties for project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj":
+           Configuration=Debug
+           Platform=AnyCPU
+     0>d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj(3,92): message : Property 'MSBuildExtensionsPath' with value 'C:\Program Files\dotnet\sdk\10.0.102\' expanded from the environment.
+       C:\Program Files\dotnet\sdk\10.0.102\Current\Microsoft.Common.props(60,5): message : Property reassignment: $(MSBuildProjectExtensionsPath)="d:\LocalSkillExchange\LocalSkillExchange\obj\" (previous value: "obj\") at C:\Program Files\dotnet\sdk\10.0.102\Current\Microsoft.Common.props (60,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Current\Microsoft.Common.props(84,119): message : Property 'MSBuildUserExtensionsPath' with value 'C:\Users\rlabi\AppData\Local\Microsoft\MSBuild' expanded from the environment.
+       The "Configuration" property is a global property, and cannot be modified.
+       The "Platform" property is a global property, and cannot be modified.
+       The "Configuration" property is a global property, and cannot be modified.
+       The "Platform" property is a global property, and cannot be modified.
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets(140,9): message : Property reassignment: $(FinalDefineConstants)="CONFIG="Debug",DEBUG=-1" (previous value: "CONFIG="Debug"") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets (140,9)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets(141,9): message : Property reassignment: $(FinalDefineConstants)="CONFIG="Debug",DEBUG=-1,TRACE=-1" (previous value: "CONFIG="Debug",DEBUG=-1") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets (141,9)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets(142,9): message : Property reassignment: $(FinalDefineConstants)="CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms"" (previous value: "CONFIG="Debug",DEBUG=-1,TRACE=-1") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets (142,9)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets(143,9): message : Property reassignment: $(FinalDefineConstants)="CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms",PLATFORM="AnyCPU"" (previous value: "CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms"") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets (143,9)
+       C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.VisualBasic.Core.targets(165,5): message : Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion: -define:CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms",PLATFORM="AnyCPU"" (previous value: "-langversion:") at C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.VisualBasic.Core.targets (165,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.VisualBasic.Core.targets(167,5): message : Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion: -define:CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms",PLATFORM="AnyCPU" -doc:"LocalSkillExchange.xml"" (previous value: "-langversion: -define:CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms",PLATFORM="AnyCPU"") at C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.VisualBasic.Core.targets (167,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.props(117,5): message : Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM64" (previous value: "Any CPU,x86,x64") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.props (117,5)
+       The "Platform" property is a global property, and cannot be modified.
+       The "Configuration" property is a global property, and cannot be modified.
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(175,5): message : Property reassignment: $(_DebugSymbolsProduced)="true" (previous value: "false") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (175,5)
+       The "SolutionName" property is a global property, and cannot be modified.
+       The "SolutionFileName" property is a global property, and cannot be modified.
+       The "SolutionPath" property is a global property, and cannot be modified.
+       The "SolutionDir" property is a global property, and cannot be modified.
+       The "SolutionExt" property is a global property, and cannot be modified.
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(392,5): message : Property reassignment: $(MSBuildCopyMarkerName)="LocalSki.3093022A" (previous value: "LocalSkillExchange.vbproj") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (392,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(393,5): message : Property reassignment: $(MSBuildCopyMarkerName)="LocalSki.3093022A.Up2Date" (previous value: "LocalSki.3093022A") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (393,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(527,5): message : Property reassignment: $(ProcessorArchitecture)="msil" (previous value: "AnyCPU") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (527,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(580,5): message : Property reassignment: $(DelaySign)="" (previous value: "false") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (580,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(649,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};" (previous value: "{CandidateAssemblyFiles}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (649,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(650,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles};") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (650,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(651,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (651,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(652,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (652,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(653,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (653,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(654,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (654,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(655,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders};{GAC}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (655,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(656,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders};{GAC}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (656,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(657,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};bin\Debug\" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (657,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(2606,5): message : Property 'LOCALAPPDATA' with value 'C:\Users\rlabi\AppData\Local' expanded from the environment.
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(3934,5): message : Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (3934,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(3935,5): message : Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Off" (previous value: "Auto") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (3935,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(5146,5): message : Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(5146,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(5146,5): message :       _SplitProjectReferencesByFileExistence
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(5146,5): message :     " (previous value: "_SplitProjectReferencesByFileExistence") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (5146,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(6959,5): message : Property 'MSBuildExtensionsPath32' with value 'C:\Program Files\dotnet\sdk\10.0.102' expanded from the environment.
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message : Property reassignment: $(ResolveReferencesDependsOn)="
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ImplicitlyExpandDesignTimeFacades
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     " (previous value: "
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets (74,5)
+       The "_RestoreSolutionFileUsed" property is a global property, and cannot be modified.
+       The "NuGetInteractive" property is a global property, and cannot be modified.
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message : Property reassignment: $(_GenerateRestoreGraphProjectEntryInputProperties)="
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       ExcludeRestorePackageImports=true;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       _RestoreSolutionFileUsed=true;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionDir=d:\LocalSkillExchange\;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionName=LocalSkillExchange;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionFileName=LocalSkillExchange.sln;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionPath=d:\LocalSkillExchange\LocalSkillExchange.sln;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionExt=.sln;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :     " (previous value: "ExcludeRestorePackageImports=true") at C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets (123,5)
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(110,5): message : Property reassignment: $(PostBuildEventDependsOn)="
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(110,5): message :       ;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(110,5): message :       CopySQLiteInteropFiles;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(110,5): message :     " (previous value: "") at d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets (110,5)
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message : Property reassignment: $(BuildDependsOn)="
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       BeforeBuild;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       CoreBuild;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       AfterBuild
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :     ;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       CopySQLiteInteropFiles;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :     " (previous value: "
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       BeforeBuild;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       CoreBuild;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       AfterBuild
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :     ") at d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets (114,5)
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message : Property reassignment: $(CleanDependsOn)="
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       BeforeClean;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       UnmanagedUnregistration;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CoreClean;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CleanReferencedProjects;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CleanPublishFolder;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       AfterClean
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :     ;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CleanSQLiteInteropFiles;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :     " (previous value: "
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       BeforeClean;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       UnmanagedUnregistration;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CoreClean;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CleanReferencedProjects;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CleanPublishFolder;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       AfterClean
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :     ") at d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets (118,5)
+       d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\Common.targets(39,5): message : Property reassignment: $(EffectivePlatform)="x86" (previous value: "AnyCPU") at d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\Common.targets (39,5)
+       Overriding target "GetFrameworkPaths" in project "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" with target "GetFrameworkPaths" from project "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets".
+       The target "ResolveNuGetPackageAssets" listed in an AfterTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets (27,11)" does not exist in the project, and will be ignored.
+     1>Project "d:\LocalSkillExchange\LocalSkillExchange.sln" (1) is building "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (2) on node 1 (_IsProjectRestoreSupported target(s)).
+     2>Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
+     2>Target "_IsProjectRestoreSupported" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (entry point):
+     2>Done building target "_IsProjectRestoreSupported" in project "LocalSkillExchange.vbproj".
+     2>Done Building Project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (_IsProjectRestoreSupported target(s)).
+     1>Done executing task "MSBuild".
+       Using "WarnForInvalidProjectsTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "WarnForInvalidProjectsTask"
+       Done executing task "WarnForInvalidProjectsTask".
+     1>Done building target "_FilterRestoreGraphProjectInputItems" in project "LocalSkillExchange.sln".
+       Target "_FilterRestoreGraphProjectInputItems" skipped. Previously built successfully.
+     1>Target "_GetAllRestoreProjectPathItems" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (target "_GenerateRestoreGraph" depends on it):
+       Using "NuGetMessageTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "NuGetMessageTask"
+         Determining projects to restore...
+       Done executing task "NuGetMessageTask".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+           _RestoreSolutionFileUsed=true
+           SolutionDir=d:\LocalSkillExchange\
+           SolutionName=LocalSkillExchange
+           SolutionFileName=LocalSkillExchange.sln
+           SolutionPath=d:\LocalSkillExchange\LocalSkillExchange.sln
+           SolutionExt=.sln
+         Additional Properties for project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj":
+           Configuration=Debug
+           Platform=AnyCPU
+     1>Project "d:\LocalSkillExchange\LocalSkillExchange.sln" (1) is building "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (2:2) on node 1 (_GenerateRestoreProjectPathWalk target(s)).
+   2:2>Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
+   2:2>Target "_GenerateRestoreProjectPathItemsPerFramework" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateRestoreProjectPathItemsCurrentProject" depends on it):
+       Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "ConvertToAbsolutePath"
+       Done executing task "ConvertToAbsolutePath".
+   2:2>Done building target "_GenerateRestoreProjectPathItemsPerFramework" in project "LocalSkillExchange.vbproj".
+   2:2>Target "_GenerateRestoreProjectPathItemsCurrentProject" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateRestoreProjectPathItems" depends on it):
+   2:2>Done building target "_GenerateRestoreProjectPathItemsCurrentProject" in project "LocalSkillExchange.vbproj".
+   2:2>Target "_GenerateRestoreProjectPathItems" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateRestoreProjectPathWalk" depends on it):
+       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+   2:2>Done building target "_GenerateRestoreProjectPathItems" in project "LocalSkillExchange.vbproj".
+   2:2>Target "_GenerateRestoreProjectPathWalk" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (entry point):
+       Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MSBuild"
+       Done executing task "MSBuild".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+   2:2>Done building target "_GenerateRestoreProjectPathWalk" in project "LocalSkillExchange.vbproj".
+   2:2>Done Building Project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (_GenerateRestoreProjectPathWalk target(s)).
+     1>Done executing task "MSBuild".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+           _RestoreSolutionFileUsed=true
+           SolutionDir=d:\LocalSkillExchange\
+           SolutionName=LocalSkillExchange
+           SolutionFileName=LocalSkillExchange.sln
+           SolutionPath=d:\LocalSkillExchange\LocalSkillExchange.sln
+           SolutionExt=.sln
+         Additional Properties for project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj":
+           Configuration=Debug
+           Platform=AnyCPU
+     1>Project "d:\LocalSkillExchange\LocalSkillExchange.sln" (1) is building "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (2:3) on node 1 (_IsProjectRestoreSupported target(s)).
+   2:3>Target "_IsProjectRestoreSupported" skipped. Previously built successfully.
+   2:3>Done Building Project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (_IsProjectRestoreSupported target(s)).
+     1>Done executing task "MSBuild".
+     1>Done building target "_GetAllRestoreProjectPathItems" in project "LocalSkillExchange.sln".
+     1>Target "_GenerateRestoreGraph" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (target "Restore" depends on it):
+       Task "Message"
+         Generating dg file
+       Done executing task "Message".
+       Task "Message"
+         d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj
+       Done executing task "Message".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+           _RestoreSolutionFileUsed=true
+           SolutionDir=d:\LocalSkillExchange\
+           SolutionName=LocalSkillExchange
+           SolutionFileName=LocalSkillExchange.sln
+           SolutionPath=d:\LocalSkillExchange\LocalSkillExchange.sln
+           SolutionExt=.sln
+         Additional Properties for project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj":
+           Configuration=Debug
+           Platform=AnyCPU
+     1>Project "d:\LocalSkillExchange\LocalSkillExchange.sln" (1) is building "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (2:4) on node 1 (_GenerateRestoreGraphProjectEntry target(s)).
+   2:4>Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
+   2:4>Target "CollectPackageReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GetRestoreProjectStyle" depends on it):
+       Using "CheckForDuplicateNuGetItemsTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   2:4>Done building target "CollectPackageReferences" in project "LocalSkillExchange.vbproj".
+   2:4>Target "_GetRestoreProjectStyle" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateRestoreSpecs" depends on it):
+       Using "GetRestoreProjectStyleTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "GetRestoreProjectStyleTask"
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.GetRestoreProjectStyleTask): NuGet.Configuration, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.Configuration.dll, MVID: 19c054bf-5f43-475d-9020-1af2e31675fc, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+       Done executing task "GetRestoreProjectStyleTask".
+   2:4>Done building target "_GetRestoreProjectStyle" in project "LocalSkillExchange.vbproj".
+   2:4>Target "_GenerateRestoreSpecs" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateRestoreGraphProjectEntry" depends on it):
+       Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Message"
+         Restore entry point d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj
+       Done executing task "Message".
+   2:4>Done building target "_GenerateRestoreSpecs" in project "LocalSkillExchange.vbproj".
+   2:4>Target "_GetRestoreSettingsOverrides" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GetRestoreSettings" depends on it):
+   2:4>Done building target "_GetRestoreSettingsOverrides" in project "LocalSkillExchange.vbproj".
+   2:4>Target "_GetRestoreSettings" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateDotnetCliToolReferenceSpecs" depends on it):
+       Using "GetRestoreSettingsTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "GetRestoreSettingsTask"
+       Done executing task "GetRestoreSettingsTask".
+   2:4>Done building target "_GetRestoreSettings" in project "LocalSkillExchange.vbproj".
+   2:4>Target "_GenerateDotnetCliToolReferenceSpecs" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateRestoreGraphProjectEntry" depends on it):
+       Using "GetRestoreDotnetCliToolsTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "GetRestoreDotnetCliToolsTask"
+       Done executing task "GetRestoreDotnetCliToolsTask".
+   2:4>Done building target "_GenerateDotnetCliToolReferenceSpecs" in project "LocalSkillExchange.vbproj".
+   2:4>Target "_GenerateRestoreGraphProjectEntry" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (entry point):
+   2:4>Done building target "_GenerateRestoreGraphProjectEntry" in project "LocalSkillExchange.vbproj".
+   2:4>Done Building Project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (_GenerateRestoreGraphProjectEntry target(s)).
+     1>Done executing task "MSBuild".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+           _RestoreSolutionFileUsed=true
+           SolutionDir=d:\LocalSkillExchange\
+           SolutionName=LocalSkillExchange
+           SolutionFileName=LocalSkillExchange.sln
+           SolutionPath=d:\LocalSkillExchange\LocalSkillExchange.sln
+           SolutionExt=.sln
+         Additional Properties for project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj":
+           Configuration=Debug
+           Platform=AnyCPU
+     1>Project "d:\LocalSkillExchange\LocalSkillExchange.sln" (1) is building "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (2:5) on node 1 (_GenerateProjectRestoreGraph target(s)).
+   2:5>Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
+       Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+       Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+       Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+   2:5>Target "_GetRestoreTargetFrameworkOverride" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GetRestoreTargetFrameworksOutput" depends on it):
+   2:5>Done building target "_GetRestoreTargetFrameworkOverride" in project "LocalSkillExchange.vbproj".
+   2:5>Target "_GetRestoreTargetFrameworksOutput" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateRestoreProjectSpec" depends on it):
+       Using "GetProjectTargetFrameworksTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "GetProjectTargetFrameworksTask"
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.GetProjectTargetFrameworksTask): NuGet.Frameworks, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.Frameworks.dll, MVID: 49dfecd1-88f8-4b59-9e85-1a519567a742, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.GetProjectTargetFrameworksTask): System.Collections.NonGeneric, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.2\System.Collections.NonGeneric.dll, MVID: 93f61b3b-397e-41d1-a23f-d3c8c69deefe, AssemblyLoadContext: Default)
+       Done executing task "GetProjectTargetFrameworksTask".
+   2:5>Done building target "_GetRestoreTargetFrameworksOutput" in project "LocalSkillExchange.vbproj".
+       Target "_GetRestoreSettings" skipped. Previously built successfully.
+   2:5>Target "_GenerateRestoreProjectSpec" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateProjectRestoreGraph" depends on it):
+   2:5>Done building target "_GenerateRestoreProjectSpec" in project "LocalSkillExchange.vbproj".
+       Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+       Target "CollectPackageReferences" skipped. Previously built successfully.
+   2:5>Target "CollectPackageDownloads" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   2:5>Done building target "CollectPackageDownloads" in project "LocalSkillExchange.vbproj".
+   2:5>Target "CollectFrameworkReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_CollectRestoreInputs" depends on it):
+   2:5>Done building target "CollectFrameworkReferences" in project "LocalSkillExchange.vbproj".
+   2:5>Target "CollectCentralPackageVersions" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   2:5>Done building target "CollectCentralPackageVersions" in project "LocalSkillExchange.vbproj".
+   2:5>Target "CollectNuGetAuditSuppressions" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   2:5>Done building target "CollectNuGetAuditSuppressions" in project "LocalSkillExchange.vbproj".
+   2:5>Target "CollectPrunePackageReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   2:5>Done building target "CollectPrunePackageReferences" in project "LocalSkillExchange.vbproj".
+   2:5>Target "_CollectRestoreInputs" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateProjectRestoreGraphPerFramework" depends on it):
+   2:5>Done building target "_CollectRestoreInputs" in project "LocalSkillExchange.vbproj".
+   2:5>Target "_GenerateProjectRestoreGraphPerFramework" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateProjectRestoreGraphCurrentProject" depends on it):
+       Using "GetRestoreProjectReferencesTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "GetRestoreProjectReferencesTask"
+       Done executing task "GetRestoreProjectReferencesTask".
+       Using "GetRestoreNuGetAuditSuppressionsTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "GetRestoreNuGetAuditSuppressionsTask"
+       Done executing task "GetRestoreNuGetAuditSuppressionsTask".
+       Using "GetRestorePrunePackageReferencesTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "GetRestorePrunePackageReferencesTask"
+       Done executing task "GetRestorePrunePackageReferencesTask".
+   2:5>Done building target "_GenerateProjectRestoreGraphPerFramework" in project "LocalSkillExchange.vbproj".
+   2:5>Target "_GenerateProjectRestoreGraphCurrentProject" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateRestoreDependencies" depends on it):
+   2:5>Done building target "_GenerateProjectRestoreGraphCurrentProject" in project "LocalSkillExchange.vbproj".
+   2:5>Target "_GenerateRestoreDependencies" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GenerateProjectRestoreGraph" depends on it):
+   2:5>Done building target "_GenerateRestoreDependencies" in project "LocalSkillExchange.vbproj".
+   2:5>Target "_GenerateProjectRestoreGraph" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (entry point):
+   2:5>Done building target "_GenerateProjectRestoreGraph" in project "LocalSkillExchange.vbproj".
+   2:5>Done Building Project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (_GenerateProjectRestoreGraph target(s)).
+     1>Done executing task "MSBuild".
+     1>Done building target "_GenerateRestoreGraph" in project "LocalSkillExchange.sln".
+     1>Target "Restore" in file "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (entry point):
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Using "RestoreTask" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll".
+       Task "RestoreTask"
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Packaging, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.Packaging.dll, MVID: d97df112-1c31-494b-92f9-b19b3bf4d608, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.LibraryModel, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.LibraryModel.dll, MVID: 03dea5e2-604e-44a3-ac1e-999ae6290330, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Versioning, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.Versioning.dll, MVID: 15b335c1-43f9-43e2-b0cb-2e5ace291849, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Protocol, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.Protocol.dll, MVID: 3112dd94-2913-48a5-b33e-969750b0052f, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Credentials, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.Credentials.dll, MVID: ed9535eb-54bc-4b05-aab5-2de28d992033, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+         X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+         X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.DependencyResolver.Core, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: C:\Program Files\dotnet\sdk\10.0.102\NuGet.DependencyResolver.Core.dll, MVID: 0c2a5b5c-f4d2-4833-ae79-b5319386cf4f, AssemblyLoadContext: MSBuild plugin C:\Program Files\dotnet\sdk\10.0.102\NuGet.Build.Tasks.dll)
+         Nothing to do. None of the projects specified contain packages to restore.
+       Done executing task "RestoreTask".
+     1>Done building target "Restore" in project "LocalSkillExchange.sln".
+     1>Done Building Project "d:\LocalSkillExchange\LocalSkillExchange.sln" (Restore target(s)).
+     0>d:\LocalSkillExchange\LocalSkillExchange.sln.metaproj : message : Property 'MSBuildExtensionsPath' with value 'C:\Program Files\dotnet\sdk\10.0.102\' expanded from the environment.
+       The "NuGetInteractive" property is a global property, and cannot be modified.
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message : Property reassignment: $(_GenerateRestoreGraphProjectEntryInputProperties)="
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       ExcludeRestorePackageImports=true;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       _RestoreSolutionFileUsed=true;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionDir=d:\LocalSkillExchange\;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionName=LocalSkillExchange;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionFileName=LocalSkillExchange.sln;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionPath=d:\LocalSkillExchange\LocalSkillExchange.sln;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :       SolutionExt=.sln;
+       C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets(123,5): message :     " (previous value: "ExcludeRestorePackageImports=true") at C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets (123,5)
+       The target "_MTPBuild" listed in a BeforeTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\Current\SolutionFile\ImportAfter\Microsoft.NET.Sdk.Solution.targets (24,11)" does not exist in the project, and will be ignored.
+       The target "Store" listed in a BeforeTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\Current\SolutionFile\ImportAfter\Microsoft.NET.Sdk.Solution.targets (33,11)" does not exist in the project, and will be ignored.
+       The target "VSTest" listed in a BeforeTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\Current\SolutionFile\ImportAfter\Microsoft.NET.Sdk.Solution.targets (33,11)" does not exist in the project, and will be ignored.
+       The target "_MTPBuild" listed in a BeforeTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\Current\SolutionFile\ImportAfter\Microsoft.NET.Sdk.Solution.targets (33,11)" does not exist in the project, and will be ignored.
+       The target "_CheckForInvalidConfigurationAndPlatform" listed in a BeforeTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\NuGet.targets (703,11)" does not exist in the project, and will be ignored.
+   1:2>Project "d:\LocalSkillExchange\LocalSkillExchange.sln" on node 1 (default targets).
+   1:2>Target "ValidateSolutionConfiguration" in file "d:\LocalSkillExchange\LocalSkillExchange.sln.metaproj" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (entry point):
+   1:2>Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Message"
+         Building solution configuration "Debug|Any CPU".
+       Done executing task "Message".
+   1:2>Done building target "ValidateSolutionConfiguration" in project "LocalSkillExchange.sln".
+   1:2>Target "ValidateToolsVersions" in file "d:\LocalSkillExchange\LocalSkillExchange.sln.metaproj" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (entry point):
+   1:2>Done building target "ValidateToolsVersions" in project "LocalSkillExchange.sln".
+   1:2>Target "ValidateProjects" in file "d:\LocalSkillExchange\LocalSkillExchange.sln.metaproj" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (entry point):
+   1:2>Done building target "ValidateProjects" in project "LocalSkillExchange.sln".
+   1:2>Target "Build" in file "d:\LocalSkillExchange\LocalSkillExchange.sln.metaproj" from project "d:\LocalSkillExchange\LocalSkillExchange.sln" (entry point):
+       Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MSBuild"
+         Global Properties:
+           BuildingSolutionFile=true
+           CurrentSolutionConfigurationContents=<SolutionConfiguration>
+           <ProjectConfiguration Project="{3FF15B25-8253-4864-97F4-B9F8FE7F63C7}" AbsolutePath="d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+         </SolutionConfiguration>
+           SolutionDir=d:\LocalSkillExchange\
+           SolutionExt=.sln
+           SolutionFileName=LocalSkillExchange.sln
+           SolutionName=LocalSkillExchange
+           SolutionPath=d:\LocalSkillExchange\LocalSkillExchange.sln
+         Additional Properties for project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj":
+           Configuration=Debug
+           Platform=AnyCPU
+     0>d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj(3,92): message : Property 'MSBuildExtensionsPath' with value 'C:\Program Files\dotnet\sdk\10.0.102\' expanded from the environment.
+       C:\Program Files\dotnet\sdk\10.0.102\Current\Microsoft.Common.props(60,5): message : Property reassignment: $(MSBuildProjectExtensionsPath)="d:\LocalSkillExchange\LocalSkillExchange\obj\" (previous value: "obj\") at C:\Program Files\dotnet\sdk\10.0.102\Current\Microsoft.Common.props (60,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Current\Microsoft.Common.props(84,119): message : Property 'MSBuildUserExtensionsPath' with value 'C:\Users\rlabi\AppData\Local\Microsoft\MSBuild' expanded from the environment.
+       The "Configuration" property is a global property, and cannot be modified.
+       The "Platform" property is a global property, and cannot be modified.
+       The "Configuration" property is a global property, and cannot be modified.
+       The "Platform" property is a global property, and cannot be modified.
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets(140,9): message : Property reassignment: $(FinalDefineConstants)="CONFIG="Debug",DEBUG=-1" (previous value: "CONFIG="Debug"") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets (140,9)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets(141,9): message : Property reassignment: $(FinalDefineConstants)="CONFIG="Debug",DEBUG=-1,TRACE=-1" (previous value: "CONFIG="Debug",DEBUG=-1") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets (141,9)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets(142,9): message : Property reassignment: $(FinalDefineConstants)="CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms"" (previous value: "CONFIG="Debug",DEBUG=-1,TRACE=-1") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets (142,9)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets(143,9): message : Property reassignment: $(FinalDefineConstants)="CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms",PLATFORM="AnyCPU"" (previous value: "CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms"") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets (143,9)
+       C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.VisualBasic.Core.targets(165,5): message : Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion: -define:CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms",PLATFORM="AnyCPU"" (previous value: "-langversion:") at C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.VisualBasic.Core.targets (165,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.VisualBasic.Core.targets(167,5): message : Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion: -define:CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms",PLATFORM="AnyCPU" -doc:"LocalSkillExchange.xml"" (previous value: "-langversion: -define:CONFIG="Debug",DEBUG=-1,TRACE=-1,_MyType="WindowsForms",PLATFORM="AnyCPU"") at C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.VisualBasic.Core.targets (167,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.props(117,5): message : Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM64" (previous value: "Any CPU,x86,x64") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.props (117,5)
+       The "Platform" property is a global property, and cannot be modified.
+       The "Configuration" property is a global property, and cannot be modified.
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(175,5): message : Property reassignment: $(_DebugSymbolsProduced)="true" (previous value: "false") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (175,5)
+       The "SolutionName" property is a global property, and cannot be modified.
+       The "SolutionFileName" property is a global property, and cannot be modified.
+       The "SolutionPath" property is a global property, and cannot be modified.
+       The "SolutionDir" property is a global property, and cannot be modified.
+       The "SolutionExt" property is a global property, and cannot be modified.
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(392,5): message : Property reassignment: $(MSBuildCopyMarkerName)="LocalSki.3093022A" (previous value: "LocalSkillExchange.vbproj") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (392,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(393,5): message : Property reassignment: $(MSBuildCopyMarkerName)="LocalSki.3093022A.Up2Date" (previous value: "LocalSki.3093022A") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (393,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(527,5): message : Property reassignment: $(ProcessorArchitecture)="msil" (previous value: "AnyCPU") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (527,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(580,5): message : Property reassignment: $(DelaySign)="" (previous value: "false") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (580,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(649,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};" (previous value: "{CandidateAssemblyFiles}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (649,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(650,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles};") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (650,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(651,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (651,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(652,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (652,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(653,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (653,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(654,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (654,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(655,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders};{GAC}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (655,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(656,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders};{GAC}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (656,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(657,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};bin\Debug\" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (657,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(2606,5): message : Property 'LOCALAPPDATA' with value 'C:\Users\rlabi\AppData\Local' expanded from the environment.
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(3934,5): message : Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (3934,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(3935,5): message : Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Off" (previous value: "Auto") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (3935,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(5146,5): message : Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(5146,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(5146,5): message :       _SplitProjectReferencesByFileExistence
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(5146,5): message :     " (previous value: "_SplitProjectReferencesByFileExistence") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (5146,5)
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(6959,5): message : Property 'MSBuildExtensionsPath32' with value 'C:\Program Files\dotnet\sdk\10.0.102' expanded from the environment.
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message : Property reassignment: $(ResolveReferencesDependsOn)="
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ImplicitlyExpandDesignTimeFacades
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     " (previous value: "
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets (74,5)
+       The "NuGetInteractive" property is a global property, and cannot be modified.
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(110,5): message : Property reassignment: $(PostBuildEventDependsOn)="
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(110,5): message :       ;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(110,5): message :       CopySQLiteInteropFiles;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(110,5): message :     " (previous value: "") at d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets (110,5)
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message : Property reassignment: $(BuildDependsOn)="
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       BeforeBuild;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       CoreBuild;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       AfterBuild
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :     ;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       CopySQLiteInteropFiles;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :     " (previous value: "
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       BeforeBuild;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       CoreBuild;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :       AfterBuild
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(114,5): message :     ") at d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets (114,5)
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message : Property reassignment: $(CleanDependsOn)="
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       BeforeClean;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       UnmanagedUnregistration;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CoreClean;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CleanReferencedProjects;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CleanPublishFolder;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       AfterClean
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :     ;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CleanSQLiteInteropFiles;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :     " (previous value: "
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       BeforeClean;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       UnmanagedUnregistration;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CoreClean;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CleanReferencedProjects;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       CleanPublishFolder;
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :       AfterClean
+       d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets(118,5): message :     ") at d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets (118,5)
+       d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\Common.targets(39,5): message : Property reassignment: $(EffectivePlatform)="x86" (previous value: "AnyCPU") at d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\Common.targets (39,5)
+       Overriding target "GetFrameworkPaths" in project "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" with target "GetFrameworkPaths" from project "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets".
+       The target "ResolveNuGetPackageAssets" listed in an AfterTargets attribute at "C:\Program Files\dotnet\sdk\10.0.102\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets (27,11)" does not exist in the project, and will be ignored.
+   1:2>Project "d:\LocalSkillExchange\LocalSkillExchange.sln" (1:2) is building "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (2:6) on node 1 (default targets).
+   2:6>Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
+   2:6>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "BeforeBuild" depends on it):
+       Task "Message"
+         Configuration=Debug
+       Done executing task "Message".
+       Task "Message"
+         Platform=AnyCPU
+       Done executing task "Message".
+   2:6>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "LocalSkillExchange.vbproj".
+   2:6>Target "BeforeBuild" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "Build" depends on it):
+   2:6>Done building target "BeforeBuild" in project "LocalSkillExchange.vbproj".
+   2:6>Target "BuildOnlySettings" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "CoreBuild" depends on it):
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(1168,7): message : Property reassignment: $(BuildingProject)="true" (previous value: "false") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (1168,7) [d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj]
+   2:6>Done building target "BuildOnlySettings" in project "LocalSkillExchange.vbproj".
+   2:6>Target "GetFrameworkPaths" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareForBuild" depends on it):
+   2:6>Done building target "GetFrameworkPaths" in project "LocalSkillExchange.vbproj".
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+   2:6>Target "GetReferenceAssemblyPaths" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareForBuild" depends on it):
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(1255,7): message : Property reassignment: $(TargetFrameworkDirectory)="" (previous value: "v4.0.30319") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (1255,7) [d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj]
+       Using "GetReferenceAssemblyPaths" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "GetReferenceAssemblyPaths"
+       Done executing task "GetReferenceAssemblyPaths".
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(1272,7): message : Property reassignment: $(TargetFrameworkDirectory)="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\;;" (previous value: "v4.0.30319") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (1272,7) [d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj]
+       C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets(1293,7): message : Property reassignment: $(TargetFrameworkDirectory)="C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\;;;C:\Program Files %28x86%29\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\" (previous value: "v4.0.30319") at C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets (1293,7) [d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj]
+   2:6>Done building target "GetReferenceAssemblyPaths" in project "LocalSkillExchange.vbproj".
+   2:6>Target "EnsureNuGetPackageBuildImports" in project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareForBuild" depends on it):
+   2:6>Done building target "EnsureNuGetPackageBuildImports" in project "LocalSkillExchange.vbproj".
+   2:6>Target "PrepareForBuild" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "CoreBuild" depends on it):
+       Using "FindAppConfigFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "FindAppConfigFile"
+         Found "App.config".
+       Done executing task "FindAppConfigFile".
+       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MakeDir"
+       Done executing task "MakeDir".
+   2:6>Done building target "PrepareForBuild" in project "LocalSkillExchange.vbproj".
+   2:6>Target "BeforeResolveReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveReferences" depends on it):
+   2:6>Done building target "BeforeResolveReferences" in project "LocalSkillExchange.vbproj".
+   2:6>Target "IgnoreJavaScriptOutputAssembly" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "AssignProjectConfiguration" depends on it):
+   2:6>Done building target "IgnoreJavaScriptOutputAssembly" in project "LocalSkillExchange.vbproj".
+   2:6>Target "AssignProjectConfiguration" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveReferences" depends on it):
+       Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignProjectConfiguration"
+       Done executing task "AssignProjectConfiguration".
+   2:6>Done building target "AssignProjectConfiguration" in project "LocalSkillExchange.vbproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+   2:6>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareProjectReferences" depends on it):
+   2:6>Done building target "_SplitProjectReferencesByFileExistence" in project "LocalSkillExchange.vbproj".
+   2:6>Target "_AddOutputPathToGlobalPropertiesToRemove" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_GetProjectReferenceTargetFrameworkProperties" depends on it):
+   2:6>Done building target "_AddOutputPathToGlobalPropertiesToRemove" in project "LocalSkillExchange.vbproj".
+   2:6>Target "_GetProjectReferenceTargetFrameworkProperties" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareProjectReferences" depends on it):
+       Task "MSBuild"
+       Done executing task "MSBuild".
+       Using "SetRidAgnosticValueForProjects" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "SetRidAgnosticValueForProjects"
+       Done executing task "SetRidAgnosticValueForProjects".
+   2:6>Done building target "_GetProjectReferenceTargetFrameworkProperties" in project "LocalSkillExchange.vbproj".
+   2:6>Target "PrepareProjectReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveProjectReferences" depends on it):
+   2:6>Done building target "PrepareProjectReferences" in project "LocalSkillExchange.vbproj".
+   2:6>Target "ResolveProjectReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveReferences" depends on it):
+   2:6>Done building target "ResolveProjectReferences" in project "LocalSkillExchange.vbproj".
+       Target "ResolveProjectReferences" skipped. Previously built successfully.
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+       Target "PrepareForBuild" skipped. Previously built successfully.
+   2:6>Target "ResolveSDKReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveAssemblyReferences" depends on it):
+   2:6>Done building target "ResolveSDKReferences" in project "LocalSkillExchange.vbproj".
+       Target "ResolveSDKReferences" skipped. Previously built successfully.
+   2:6>Target "ExpandSDKReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveAssemblyReferences" depends on it):
+   2:6>Done building target "ExpandSDKReferences" in project "LocalSkillExchange.vbproj".
+   2:6>Target "ImplicitlyExpandNETStandardFacades" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.NETFramework.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveAssemblyReferences" depends on it):
+   2:6>Done building target "ImplicitlyExpandNETStandardFacades" in project "LocalSkillExchange.vbproj".
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+   2:6>Target "_HandlePackageFileConflicts" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveAssemblyReferences" depends on it):
+       Using "ResolvePackageFileConflicts" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\Microsoft\Microsoft.NET.Build.Extensions\\tools\net10.0\Microsoft.NET.Build.Extensions.Tasks.dll".
+       Task "ResolvePackageFileConflicts"
+       Done executing task "ResolvePackageFileConflicts".
+   2:6>Done building target "_HandlePackageFileConflicts" in project "LocalSkillExchange.vbproj".
+   2:6>Target "ResolveAssemblyReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveReferences" depends on it):
+       Using "ResolveAssemblyReference" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "ResolveAssemblyReference"
+         TargetFrameworkMoniker:
+             .NETFramework,Version=v4.7.2
+         TargetFrameworkMonikerDisplayName:
+             .NET Framework 4.7.2
+         TargetedRuntimeVersion:
+             v
+         Assemblies:
+             Microsoft.Web.WebView2.Core, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL
+                 HintPath = '..\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Core.dll'
+             Microsoft.Web.WebView2.WinForms, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL
+                 HintPath = '..\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.WinForms.dll'
+             Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL
+                 HintPath = '..\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Wpf.dll'
+             Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL
+                 HintPath = '..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll'
+             System
+             System.Data
+             System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL
+                 HintPath = '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll'
+             System.Deployment
+             System.Drawing
+             System.Windows.Forms
+             System.Xml
+             System.Xml.Linq
+             System.Data.DataSetExtensions
+             System.Net.Http
+             System.Core
+         AssemblyFiles:
+             C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll
+         CandidateAssemblyFiles:
+             d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll
+             d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll
+             d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll
+         TargetFrameworkDirectories:
+             C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\,C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\
+         NonCultureResourceDirectories:
+             
+         InstalledAssemblyTables:
+         IgnoreInstalledAssemblyTable:
+             False
+         SearchPaths:
+             {CandidateAssemblyFiles}
+             {HintPathFromItem}
+             {TargetFrameworkDirectory}
+             {Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}
+             {AssemblyFolders}
+             {GAC}
+             {RawFileName}
+             bin\Debug\
+         AllowedAssemblyExtensions:
+             .winmd
+             .dll
+             .exe
+         AllowedRelatedFileExtensions:
+             .pdb
+             .xml
+             .pri
+             .dll.config
+             .exe.config
+         AppConfigFile:
+             App.config
+         AutoUnify:
+             True
+         EnableCustomCulture:
+             False
+         EnableCustomCulture:
+             False
+         CopyLocalDependenciesWhenParentReferenceInGac:
+             True
+         FindDependencies:
+             True
+         TargetProcessorArchitecture:
+             msil
+         StateFile:
+             obj\Debug\LocalSkillExchange.vbproj.AssemblyReference.cache
+         InstalledAssemblySubsetTables:
+         IgnoreInstalledAssemblySubsetTable:
+             False
+         TargetFrameworkSubsets:
+         FullTargetFrameworkSubsetNames:
+             Full
+         ProfileName:
+             
+         FullFrameworkFolders:
+             C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\
+         LatestTargetFrameworkDirectories:
+         ProfileTablesLocation:
+         Primary reference "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Primary reference "Microsoft.Web.WebView2.Core, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+             Resolved file path is "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Core.dll".
+             Reference found at search path location "{HintPathFromItem}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Microsoft.Web.WebView2.Core, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Microsoft.Web.WebView2.Core, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Microsoft.Web.WebView2.Core, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+             Found related file "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Core.xml".
+         Primary reference "Microsoft.Web.WebView2.WinForms, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+             Resolved file path is "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.WinForms.dll".
+             Reference found at search path location "{HintPathFromItem}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Microsoft.Web.WebView2.WinForms, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Microsoft.Web.WebView2.WinForms, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Microsoft.Web.WebView2.WinForms, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+             Found related file "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.WinForms.xml".
+         Primary reference "Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+             Resolved file path is "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Wpf.dll".
+             Reference found at search path location "{HintPathFromItem}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e".
+             Found related file "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Wpf.xml".
+         Primary reference "Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed".
+             Resolved file path is "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll".
+             Reference found at search path location "{HintPathFromItem}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed".
+             Found related file "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.xml".
+         Primary reference "System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Primary reference "System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139".
+             Resolved file path is "d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll".
+             Reference found at search path location "{HintPathFromItem}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139".
+             Found related file "d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.xml".
+         Primary reference "System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Primary reference "System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Primary reference "System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Primary reference "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Primary reference "System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Primary reference "System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Primary reference "System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Primary reference "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.winmd", but it didn't exist.
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Dependency "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462" (added by referencing assembly "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Core.dll").
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\mscorlib.winmd", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\mscorlib.dll", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\mscorlib.exe", but it didn't exist.
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.winmd", but it didn't exist.
+             Required by "Microsoft.Web.WebView2.Core, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL".
+             Required by "Microsoft.Web.WebView2.WinForms, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL".
+             Required by "Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL".
+             Required by "Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL".
+             Required by "System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL".
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Dependency "PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationFramework.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462" (added by referencing assembly "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Wpf.dll").
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\PresentationFramework.winmd", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\PresentationFramework.dll", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\PresentationFramework.exe", but it didn't exist.
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationFramework.winmd", but it didn't exist.
+             Required by "Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL".
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Dependency "WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\WindowsBase.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462" (added by referencing assembly "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Wpf.dll").
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\WindowsBase.winmd", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\WindowsBase.dll", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\WindowsBase.exe", but it didn't exist.
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\WindowsBase.winmd", but it didn't exist.
+             Required by "Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL".
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Dependency "Windows.Foundation.UniversalApiContract, Version=15.0.0.0, Culture=neutral, PublicKeyToken=null".
+             Could not resolve this reference. Could not locate the assembly "Windows.Foundation.UniversalApiContract, Version=15.0.0.0, Culture=neutral, PublicKeyToken=null". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+                 For SearchPath "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462" (added by referencing assembly "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Wpf.dll").
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Windows.Foundation.UniversalApiContract.winmd", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Windows.Foundation.UniversalApiContract.dll", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Windows.Foundation.UniversalApiContract.exe", but it didn't exist.
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Windows.Foundation.UniversalApiContract, Version=15.0.0.0, Culture=neutral, PublicKeyToken=null".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Windows.Foundation.UniversalApiContract, Version=15.0.0.0, Culture=neutral, PublicKeyToken=null".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Windows.Foundation.UniversalApiContract, Version=15.0.0.0, Culture=neutral, PublicKeyToken=null".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Windows.Foundation.UniversalApiContract.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Windows.Foundation.UniversalApiContract.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Windows.Foundation.UniversalApiContract.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\Windows.Foundation.UniversalApiContract.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\Windows.Foundation.UniversalApiContract.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\Windows.Foundation.UniversalApiContract.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{GAC}".
+                 Considered "{GAC}\Windows.Foundation.UniversalApiContract.winmd", but it didn't exist.
+                 Considered "{GAC}\Windows.Foundation.UniversalApiContract.dll", but it didn't exist.
+                 Considered "{GAC}\Windows.Foundation.UniversalApiContract.exe", but it didn't exist.
+                 For SearchPath "bin\Debug\".
+                 Considered "bin\Debug\Windows.Foundation.UniversalApiContract.winmd", but it didn't exist.
+                 Considered "bin\Debug\Windows.Foundation.UniversalApiContract.dll", but it didn't exist.
+                 Considered "bin\Debug\Windows.Foundation.UniversalApiContract.exe", but it didn't exist.
+             Required by "Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL".
+         Dependency "PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationCore.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462" (added by referencing assembly "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Wpf.dll").
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\PresentationCore.winmd", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\PresentationCore.dll", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\PresentationCore.exe", but it didn't exist.
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationCore.winmd", but it didn't exist.
+             Required by "Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL".
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Dependency "Windows.Foundation.FoundationContract, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null".
+             Could not resolve this reference. Could not locate the assembly "Windows.Foundation.FoundationContract, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+                 For SearchPath "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462" (added by referencing assembly "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Wpf.dll").
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Windows.Foundation.FoundationContract.winmd", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Windows.Foundation.FoundationContract.dll", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Windows.Foundation.FoundationContract.exe", but it didn't exist.
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Windows.Foundation.FoundationContract, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Windows.Foundation.FoundationContract, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "Windows.Foundation.FoundationContract, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Windows.Foundation.FoundationContract.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Windows.Foundation.FoundationContract.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Windows.Foundation.FoundationContract.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\Windows.Foundation.FoundationContract.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\Windows.Foundation.FoundationContract.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\Windows.Foundation.FoundationContract.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.7.2,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{GAC}".
+                 Considered "{GAC}\Windows.Foundation.FoundationContract.winmd", but it didn't exist.
+                 Considered "{GAC}\Windows.Foundation.FoundationContract.dll", but it didn't exist.
+                 Considered "{GAC}\Windows.Foundation.FoundationContract.exe", but it didn't exist.
+                 For SearchPath "bin\Debug\".
+                 Considered "bin\Debug\Windows.Foundation.FoundationContract.winmd", but it didn't exist.
+                 Considered "bin\Debug\Windows.Foundation.FoundationContract.dll", but it didn't exist.
+                 Considered "bin\Debug\Windows.Foundation.FoundationContract.exe", but it didn't exist.
+             Required by "Microsoft.Web.WebView2.Wpf, Version=1.0.3800.47, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL".
+         Dependency "System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Numerics.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45" (added by referencing assembly "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll").
+                 Considered "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\System.Numerics.winmd", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\System.Numerics.dll", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\System.Numerics.exe", but it didn't exist.
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Numerics.winmd", but it didn't exist.
+             Required by "Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL".
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Dependency "System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Runtime.Serialization.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45" (added by referencing assembly "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll").
+                 Considered "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\System.Runtime.Serialization.winmd", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\System.Runtime.Serialization.dll", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\System.Runtime.Serialization.exe", but it didn't exist.
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Runtime.Serialization.winmd", but it didn't exist.
+             Required by "Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL".
+             This reference is not "CopyLocal" because it's a prerequisite file.
+         Dependency "System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+             Resolved file path is "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Transactions.dll".
+             Reference found at search path location "{TargetFrameworkDirectory}".
+                 For SearchPath "d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46" (added by referencing assembly "d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll").
+                 Considered "d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Transactions.winmd", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Transactions.dll", but it didn't exist.
+                 Considered "d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Transactions.exe", but it didn't exist.
+                 For SearchPath "{CandidateAssemblyFiles}".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x86\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-x64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 Considered "d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\build\\..\runtimes\win-arm64\native\WebView2Loader.dll",
+         			but its name "WebView2Loader"
+         			didn't match the expected name "System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Transactions.winmd", but it didn't exist.
+             Required by "System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL".
+             This reference is not "CopyLocal" because it's a prerequisite file.
+       Done executing task "ResolveAssemblyReference".
+   2:6>Done building target "ResolveAssemblyReferences" in project "LocalSkillExchange.vbproj".
+       Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+   2:6>Target "_RemoveZipFileSuggestedRedirect" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.NETFramework.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "GenerateBindingRedirects" depends on it):
+   2:6>Done building target "_RemoveZipFileSuggestedRedirect" in project "LocalSkillExchange.vbproj".
+   2:6>Target "GenerateBindingRedirectsUpdateAppConfig" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveReferences" depends on it):
+   2:6>Done building target "GenerateBindingRedirectsUpdateAppConfig" in project "LocalSkillExchange.vbproj".
+   2:6>Target "AfterResolveReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveReferences" depends on it):
+   2:6>Done building target "AfterResolveReferences" in project "LocalSkillExchange.vbproj".
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+   2:6>Target "ImplicitlyExpandDesignTimeFacades" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.NETFramework.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResolveReferences" depends on it):
+   2:6>Done building target "ImplicitlyExpandDesignTimeFacades" in project "LocalSkillExchange.vbproj".
+   2:6>Target "ResolveReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "CoreBuild" depends on it):
+   2:6>Done building target "ResolveReferences" in project "LocalSkillExchange.vbproj".
+   2:6>Target "CopyAdditionalFiles" in file "C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.Managed.Core.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "AssignTargetPaths" depends on it):
+   2:6>Done building target "CopyAdditionalFiles" in project "LocalSkillExchange.vbproj".
+   2:6>Target "AssignTargetPaths" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareResourceNames" depends on it):
+       Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+       Task "AssignTargetPath"
+       Done executing task "AssignTargetPath".
+   2:6>Done building target "AssignTargetPaths" in project "LocalSkillExchange.vbproj".
+       Target "AssignTargetPaths" skipped. Previously built successfully.
+   2:6>Target "SplitResourcesByCulture" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareResourceNames" depends on it):
+       Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignCulture"
+         Culture of "" was assigned to file "Form1.resx".
+         Culture of "" was assigned to file "My Project\Resources.resx".
+       Done executing task "AssignCulture".
+   2:6>Done building target "SplitResourcesByCulture" in project "LocalSkillExchange.vbproj".
+   2:6>Target "CreateManifestResourceNames" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareResourceNames" depends on it):
+       Using "CreateVisualBasicManifestResourceName" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "CreateVisualBasicManifestResourceName"
+         Root namespace is 'LocalSkillExchange'.
+         Resource file 'Form1.resx' depends on 'Form1.vb'.
+         Resource file 'Form1.resx' gets manifest resource name 'LocalSkillExchange.Form1'.
+         Resource file 'My Project\Resources.resx' doesn't depend on any other file.
+         Resource file 'My Project\Resources.resx' gets manifest resource name 'LocalSkillExchange.Resources'.
+       Done executing task "CreateVisualBasicManifestResourceName".
+   2:6>Done building target "CreateManifestResourceNames" in project "LocalSkillExchange.vbproj".
+   2:6>Target "CreateCustomManifestResourceNames" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareResourceNames" depends on it):
+   2:6>Done building target "CreateCustomManifestResourceNames" in project "LocalSkillExchange.vbproj".
+   2:6>Target "PrepareResourceNames" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareResources" depends on it):
+   2:6>Done building target "PrepareResourceNames" in project "LocalSkillExchange.vbproj".
+       Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+       Target "SplitResourcesByCulture" skipped. Previously built successfully.
+   2:6>Target "BeforeResGen" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResGen" depends on it):
+   2:6>Done building target "BeforeResGen" in project "LocalSkillExchange.vbproj".
+       Target "ResolveReferences" skipped. Previously built successfully.
+   2:6>Target "FindReferenceAssembliesForReferences" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "CoreResGen" depends on it):
+   2:6>Done building target "FindReferenceAssembliesForReferences" in project "LocalSkillExchange.vbproj".
+   2:6>Target "CoreResGen" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResGen" depends on it):
+       Using "GenerateResource" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "GenerateResource"
+         Task assembly was loaded from 'C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Build.dll' while the desired location was 'C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Build.Tasks.Core.dll'.
+         Launching task "GenerateResource" from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" in an external task host with a runtime of "NET" and a process architecture of "x86".
+     0>Reusing node 73 (PID: 30460).
+   2:6>CoreResGen:
+         No resources are out of date with respect to their source files. Skipping resource generation.
+       Done executing task "GenerateResource".
+   2:6>Done building target "CoreResGen" in project "LocalSkillExchange.vbproj".
+   2:6>Target "AfterResGen" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "ResGen" depends on it):
+   2:6>Done building target "AfterResGen" in project "LocalSkillExchange.vbproj".
+   2:6>Target "ResGen" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "PrepareResources" depends on it):
+   2:6>Done building target "ResGen" in project "LocalSkillExchange.vbproj".
+   2:6>Target "PrepareResources" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "CoreBuild" depends on it):
+   2:6>Done building target "PrepareResources" in project "LocalSkillExchange.vbproj".
+       Target "ResolveReferences" skipped. Previously built successfully.
+   2:6>Target "_SetEmbeddedWin32ManifestProperties" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "SetWin32ManifestProperties" depends on it):
+       Using "GetFrameworkPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "GetFrameworkPath"
+       Done executing task "GetFrameworkPath".
+   2:6>Done building target "_SetEmbeddedWin32ManifestProperties" in project "LocalSkillExchange.vbproj".
+   2:6>Target "SetWin32ManifestProperties" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "Compile" depends on it):
+   2:6>Done building target "SetWin32ManifestProperties" in project "LocalSkillExchange.vbproj".
+       Target "FindReferenceAssembliesForReferences" skipped. Previously built successfully.
+   2:6>Target "_GenerateCompileInputs" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "Compile" depends on it):
+   2:6>Done building target "_GenerateCompileInputs" in project "LocalSkillExchange.vbproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+   2:6>Target "GenerateMSBuildEditorConfigFileShouldRun" in file "C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.Managed.Core.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "GenerateMSBuildEditorConfigFile" depends on it):
+   2:6>Done building target "GenerateMSBuildEditorConfigFileShouldRun" in project "LocalSkillExchange.vbproj".
+   2:6>Target "GenerateMSBuildEditorConfigFile" in file "C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.Managed.Core.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "BeforeCompile" depends on it):
+   2:6>Done building target "GenerateMSBuildEditorConfigFile" in project "LocalSkillExchange.vbproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+   2:6>Target "_SetTargetFrameworkMonikerAttribute" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.VisualBasic.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "GenerateTargetFrameworkMonikerAttribute" depends on it):
+   2:6>Done building target "_SetTargetFrameworkMonikerAttribute" in project "LocalSkillExchange.vbproj".
+   2:6>Target "GenerateTargetFrameworkMonikerAttribute" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "BeforeCompile" depends on it):
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       Input files: C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.targets
+       Output files: obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.vb
+   2:6>Done building target "GenerateTargetFrameworkMonikerAttribute" in project "LocalSkillExchange.vbproj".
+   2:6>Target "BeforeCompile" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "Compile" depends on it):
+   2:6>Done building target "BeforeCompile" in project "LocalSkillExchange.vbproj".
+       Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+       Target "_GenerateCompileInputs" skipped. Previously built successfully.
+   2:6>Target "_GenerateCompileDependencyCache" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "Compile" depends on it):
+       Using "Hash" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Hash"
+       Done executing task "Hash".
+       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "WriteLinesToFile"
+         Skipping write to file "obj\Debug\LocalSkillExchange.vbproj.CoreCompileInputs.cache" because content would not change.
+       Done executing task "WriteLinesToFile".
+   2:6>Done building target "_GenerateCompileDependencyCache" in project "LocalSkillExchange.vbproj".
+   2:6>Target "_BeforeVBCSCoreCompile" in file "C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.Managed.Core.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "CoreCompile" depends on it):
+   2:6>Done building target "_BeforeVBCSCoreCompile" in project "LocalSkillExchange.vbproj".
+   2:6>Target "_ComputeSkipAnalyzers" in file "C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.Managed.Core.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "CoreCompile" depends on it):
+   2:6>Done building target "_ComputeSkipAnalyzers" in project "LocalSkillExchange.vbproj".
+   2:6>Target "CoreCompile" in file "C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.VisualBasic.Core.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "Compile" depends on it):
+       Building target "CoreCompile" completely.
+       Input file "Form1.vb" is newer than output file "obj\Debug\LocalSkillExchange.xml".
+       Using "Vbc" task from assembly "C:\Program Files\dotnet\sdk\10.0.102\Roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll".
+       Task "Vbc"
+         Setting DOTNET_ROOT to 'C:\Program Files\dotnet'
+         Environment Variables passed to tool:
+           DOTNET_ROOT=C:\Program Files\dotnet
+         C:\Program Files\dotnet\sdk\10.0.102\Roslyn\bincore\vbc.exe /noconfig /imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Data,System.Drawing,System.Diagnostics,System.Windows.Forms,System.Linq,System.Xml.Linq,System.Threading.Tasks /optioncompare:Binary /optionexplicit+ /optionstrict:custom /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /optioninfer+ /nostdlib /platform:anycpu32bitpreferred /rootnamespace:LocalSkillExchange /sdkpath:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2" /highentropyva+ /doc:obj\Debug\LocalSkillExchange.xml /define:"CONFIG=\"Debug\",DEBUG=-1,TRACE=-1,_MyType=\"WindowsForms\",PLATFORM=\"AnyCPU\"" /reference:d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Core.dll,d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.WinForms.dll,d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Wpf.dll,d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll,"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll",d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll,"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /main:LocalSkillExchange.My.MyApplication /debug+ /debug:full /filealign:512 /out:obj\Debug\LocalSkillExchange.exe /subsystemversion:6.00 /resource:obj\Debug\LocalSkillExchange.Form1.resources /resource:obj\Debug\LocalSkillExchange.Resources.resources /target:winexe /utf8output /deterministic+ DatabaseHelper.vb Form1.vb Form1.Designer.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb" "obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.vb"
+         Compilation request LocalSkillExchange, PathToTool=C:\Program Files\dotnet\sdk\10.0.102\Roslyn\bincore\vbc.exe
+         CommandLine = ' /noconfig'
+         BuildResponseFile = '/imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Data,System.Drawing,System.Diagnostics,System.Windows.Forms,System.Linq,System.Xml.Linq,System.Threading.Tasks /optioncompare:Binary /optionexplicit+ /optionstrict:custom /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /optioninfer+ /nostdlib /platform:anycpu32bitpreferred /rootnamespace:LocalSkillExchange /sdkpath:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2" /highentropyva+ /doc:obj\Debug\LocalSkillExchange.xml /define:"CONFIG=\"Debug\",DEBUG=-1,TRACE=-1,_MyType=\"WindowsForms\",PLATFORM=\"AnyCPU\"" /reference:d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Core.dll,d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.WinForms.dll,d:\LocalSkillExchange\packages\Microsoft.Web.WebView2.1.0.3800.47\lib\net462\Microsoft.Web.WebView2.Wpf.dll,d:\LocalSkillExchange\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll,"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll",d:\LocalSkillExchange\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll,"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll","C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /main:LocalSkillExchange.My.MyApplication /debug+ /debug:full /filealign:512 /out:obj\Debug\LocalSkillExchange.exe /subsystemversion:6.00 /resource:obj\Debug\LocalSkillExchange.Form1.resources /resource:obj\Debug\LocalSkillExchange.Resources.resources /target:winexe /utf8output /deterministic+ DatabaseHelper.vb Form1.vb Form1.Designer.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb" "obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.vb"'
+         Attempt to open named pipe 'bFUHux6d6+PQQQGCPb7XzygofQOJ5uau8_2PZyDz6R4'
+         Attempt to connect named pipe 'bFUHux6d6+PQQQGCPb7XzygofQOJ5uau8_2PZyDz6R4'
+         Named pipe 'bFUHux6d6+PQQQGCPb7XzygofQOJ5uau8_2PZyDz6R4' connected
+         Begin writing request for LocalSkillExchange
+         End writing request for LocalSkillExchange
+         Begin reading response for LocalSkillExchange
+         End reading response for LocalSkillExchange
+         Microsoft (R) Visual Basic Compiler version 5.0.0-2.25612.105 (44525024)
+         Copyright (C) Microsoft Corporation. All rights reserved.
+         
+   2:6>d:\LocalSkillExchange\LocalSkillExchange\Form1.vb(130,21): error BC30288: Local variable 'name' is already declared in the current block. [d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj]
+         
+                         Dim name As String = request("name").ToString()
+                             ~~~~                                       
+   2:6>d:\LocalSkillExchange\LocalSkillExchange\Form1.vb(131,21): error BC30288: Local variable 'area' is already declared in the current block. [d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj]
+         
+                         Dim area As String = request("area").ToString()
+                             ~~~~                                       
+         
+         CompilerServer: server - server processed compilation - LocalSkillExchange
+       Done executing task "Vbc" -- FAILED.
+   2:6>Done building target "CoreCompile" in project "LocalSkillExchange.vbproj" -- FAILED.
+   2:6>Target "_CheckForCompileOutputs" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_CleanGetCurrentAndPriorFileWrites" depends on it):
+   2:6>Done building target "_CheckForCompileOutputs" in project "LocalSkillExchange.vbproj".
+   2:6>Target "_CleanGetCurrentAndPriorFileWrites" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "_CleanRecordFileWrites" depends on it):
+       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "ReadLinesFromFile"
+       Done executing task "ReadLinesFromFile".
+       Task "ConvertToAbsolutePath"
+       Done executing task "ConvertToAbsolutePath".
+       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "FindUnderPath"
+         Comparison path is "d:\LocalSkillExchange\LocalSkillExchange".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Comparison path is "bin\Debug\".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Comparison path is "obj\Debug\".
+       Done executing task "FindUnderPath".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+   2:6>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "LocalSkillExchange.vbproj".
+   2:6>Target "_CleanRecordFileWrites" in file "C:\Program Files\dotnet\sdk\10.0.102\Microsoft.Common.CurrentVersion.targets" from project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (target "CoreBuild" depends on it):
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Task "MakeDir"
+       Done executing task "MakeDir".
+       Task "WriteLinesToFile"
+         Skipping write to file "obj\Debug\LocalSkillExchange.vbproj.FileListAbsolute.txt" because content would not change.
+       Done executing task "WriteLinesToFile".
+   2:6>Done building target "_CleanRecordFileWrites" in project "LocalSkillExchange.vbproj".
+   2:6>Done Building Project "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (default targets) -- FAILED.
+   1:2>Done executing task "MSBuild" -- FAILED.
+   1:2>Done building target "Build" in project "LocalSkillExchange.sln" -- FAILED.
+   1:2>Done Building Project "d:\LocalSkillExchange\LocalSkillExchange.sln" (default targets) -- FAILED.
+
+Build FAILED.
+
+       "d:\LocalSkillExchange\LocalSkillExchange.sln" (default target) (1:2) ->
+       "d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj" (default target) (2:6) ->
+       (CoreCompile target) -> 
+         d:\LocalSkillExchange\LocalSkillExchange\Form1.vb(130,21): error BC30288: Local variable 'name' is already declared in the current block. [d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj]
+         d:\LocalSkillExchange\LocalSkillExchange\Form1.vb(131,21): error BC30288: Local variable 'area' is already declared in the current block. [d:\LocalSkillExchange\LocalSkillExchange\LocalSkillExchange.vbproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.97

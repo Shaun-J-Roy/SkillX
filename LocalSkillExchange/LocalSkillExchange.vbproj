@@ -137,9 +137,6 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="skills.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

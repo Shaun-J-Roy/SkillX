@@ -19,12 +19,12 @@ Module DatabaseHelper
             ' USERS
             cmd.CommandText =
                 "CREATE TABLE IF NOT EXISTS Users(
-                    UserID INTEGER PRIMARY KEY AUTOINCREMENT,
-                    Name TEXT,
-                    Area TEXT,
-                    Credits INTEGER,
-                    Rating REAL
-                );"
+    UserID INTEGER PRIMARY KEY,
+    Name TEXT,
+    Area TEXT,
+    Credits INTEGER,
+    Rating REAL
+);"
             cmd.ExecuteNonQuery()
 
             ' SKILLS
